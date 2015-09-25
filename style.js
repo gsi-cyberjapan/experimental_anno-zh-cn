@@ -155,7 +155,8 @@ var zoomper = Math.pow(2,(GSI.GLOBALS.map.getZoom()-15));
                var annoanchor= [annostyle[feature.properties['annoCtg']].size * zoomper/2,0];
            }
            
-           var knj = feature.properties['knj'].replace(/東/g, '东').replace(/際/g, '际').replace(/スカイツリー/g, '天空树');
+           var knj = feature.properties['knj'].replace(/東/g, '东').replace(/際/g, '际').replace(/スカイツリー/g, '天空树').
+             replace(/駅$/, '站').replace(/公園$/, '公园').replace(/橋/g, '桥').replace(/空港/, '机场');
            var mydivIcon= L.divIcon({
                            iconAnchor: annoanchor,
                            className: "gsi-div-icon", 
