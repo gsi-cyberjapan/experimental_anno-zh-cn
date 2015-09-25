@@ -156,7 +156,8 @@ var zoomper = Math.pow(2,(GSI.GLOBALS.map.getZoom()-15));
            }
            
            var knj = feature.properties['knj'].replace(/東/g, '东').replace(/際/g, '际').replace(/スカイツリー/g, '天空树').
-             replace(/駅$/, '站').replace(/公園$/, '公园').replace(/橋/g, '桥').replace(/空港/, '机场');
+             replace(/駅$/, '站').replace(/公園$/, '公园').replace(/橋/g, '桥').replace(/空港/, '机场').replace(/運河/g, '运河').
+             replace(/場/g, '场').replace(/門/g, '门');
            var mydivIcon= L.divIcon({
                            iconAnchor: annoanchor,
                            className: "gsi-div-icon", 
